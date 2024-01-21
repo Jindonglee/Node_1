@@ -13,6 +13,10 @@ app.use(express.urlencoded({ extended: true }));
 
 const router = express.Router();
 
+router.get("/", (req, res) => {
+  return res.json({ message: "안녕하세요." });
+});
+
 app.use("/api", [router, DataRouter]);
 
 app.use(errorHandlerMiddleware);
