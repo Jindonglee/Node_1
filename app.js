@@ -1,6 +1,6 @@
 import express from "express";
 import connect from "./schemas/index.js";
-import DataRouter from "./routes/pruducts.router.js";
+import DataRouter from "./routes/products.router.js";
 import errorHandlerMiddleware from "./middlewares/error-handler.middleware.js";
 
 const app = express();
